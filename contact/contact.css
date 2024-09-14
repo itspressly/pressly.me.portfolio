@@ -1,0 +1,59 @@
+.container-fixed {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-fixed .column {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid transparent;
+}
+.container-fixed .column.left {
+  background-color: #007bff;
+  color: #fff;
+}
+.container-fixed .column.left #header-greeting {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container-fixed .column.left #header-invite {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.container-fixed .column.right {
+  background-color: #fff;
+  color: #333;
+  border-left: 1px solid #ccc;
+}
+.container-fixed .column.right #header-contact {
+  font-size: 2rem;
+}
+.container-fixed .column.right .form-group {
+  margin-bottom: 15px;
+}
+.container-fixed .column.right .form-group h5 {
+  margin-bottom: 5px;
+}
+.container-fixed .column.right .form-group input,
+.container-fixed .column.right .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container-fixed .column.right .form-group textarea {
+  resize: vertical;
+}
+.container-fixed .column.right button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-fixed .column.right button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=contact.css.map */
