@@ -1,40 +1,30 @@
-window.onload = function() {
+/*window.onload = function() {
     alert("This webpage is still under development!");
 };
-
-
+*/
 
 const projects = [
     {
         title: "Image Reader",
-        description: "Developed a secure web application for reading and describing the images you output to it ",
+        description: "Developed a secure web application for reading and describing the images you output to it.",
         technologies: "HTML, CSS, JavaScript",
+        link: "https://yourlink.com/image-reader" // Add a link if you have one
     },
     {
         title: "Weather application",
-        description: "Developed an app in flutter that can predict the weather using a weather api",
+        description: "Developed an app in Flutter that can predict the weather using a weather API.",
         technologies: "Dart, Flutter, APIs",
+        link: "https://yourlink.com/weather-app" // Add a link if you have one
     },
 
-    /** 
     {
-        title: "ShopEase - E-Commerce Platform",
-        description: "Led the development of an e-commerce platform with real-time inventory tracking and secure payments.",
-        technologies: "JavaScript, Node.js, MongoDB",
+        title: "Iron Man Jarvis",
+        description: "Developed an AI assistant similar to Iron Man's Jarvis. The assistant performs tasks, talks back automatically, and supports both PC and mobile platforms.",
+        technologies: " python, APIs, Voice Recognition, VS code terminial",
+        link: "https://yourlink.com/weather-app" // Add a link if you have one
     },
-    {
-        title: "AI Art Generator",
-        description: "Created an AI-based art generator using GANs for unique digital art creation.",
-        technologies: "Python, TensorFlow, JavaScript",
-    },
-    {
-        title: "HealthTrack - Fitness App",
-        description: "Developed a fitness app tracking health metrics with real-time syncing and social sharing features.",
-        technologies: "Flutter, Firebase, JavaScript",
-    }*/
-   
+    
 ];
-
 
 const projectList = document.getElementById("projectList");
 
@@ -46,10 +36,10 @@ projects.forEach(project => {
         <h2 class="project-title">${project.title}</h2>
         <p class="project-description">${project.description}</p>
         <p class="project-tech"><strong>Technologies:</strong> ${project.technologies}</p>
+        <button onclick="window.open('${project.link}', '_blank')">Github code</button>
     `;
 
     projectList.appendChild(projectCard);
 });
-
 
 

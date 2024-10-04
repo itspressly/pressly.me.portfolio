@@ -350,13 +350,13 @@ nav {
 
 .rain::before:nth-of-type(3),
 .rain::after:nth-of-type(3) {
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   animation-delay: 1 s;
 }
 
 .rain::before:nth-of-type(4),
 .rain::after:nth-of-type(4) {
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   animation-delay: 1 s;
 }
 
@@ -368,13 +368,13 @@ nav {
 
 .rain::before:nth-of-type(6),
 .rain::after:nth-of-type(6) {
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-delay: 1 s;
 }
 
 .rain::before:nth-of-type(7),
 .rain::after:nth-of-type(7) {
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-delay: 1 s;
 }
 
@@ -386,7 +386,7 @@ nav {
 
 .rain::before:nth-of-type(9),
 .rain::after:nth-of-type(9) {
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-delay: 1 s;
 }
 
