@@ -103,7 +103,6 @@
   /* Left Paragraph Section */
   .about-text {
     width: 45%;
-    padding: 20px;
     z-index: 2;
     animation: slideInLeft 1s ease-in-out forwards;
   }
@@ -113,8 +112,8 @@
   }
   .about-me {
     background-color: #fff;
-    width: 100%;
-    height: 60vh;
+    width: 350px;
+    height: 150vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,5 +122,10 @@
   .about-content {
     display: flex;
     width: 100%;
+  }
+  #projects {
+    text-align: center;
+    background-color: #fff;
+    width: 350px;
   }
 }/*# sourceMappingURL=about.css.map */
