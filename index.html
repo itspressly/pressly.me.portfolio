@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pressly zungunde</title>
-    
+    <meta name="description" content="Pressly Zungunde - Award-Winning Portfolio">
+    <title>Pressly Zungunde - Portfolio</title>
     <link rel="stylesheet" href="index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/education-school/alphabet-p-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/education-school/alphabet-p-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-
-
-<script src="contact.js"></script>
-
-<script
+    <script
 type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 ></script>
@@ -27,92 +24,138 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
   emailjs.init("bXqNcQSJLHFiPsbAX");
 })();
 </script>
-
 </head>
 <body>
-    <div class="navbar">
+    <!-- Header -->
+    <header>
+        <div class="logo">Pressly Zungunde</div>
         <nav>
-        <ul class="nav-links">
-            <li><a href="#title">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://github.com/itspressly">Github</a></li>
-            <!--<li><a href="https://github.com/itspressly">Github</a></li>-->
-            <li><a href="#header-contact">Contact</a></li>
-          </ul>
-           <!-- Container for raindrops -->
-    <div class="rain"></div>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </div>
-    <div id="title" class="title">
-        <h1>I'M PRESSLY ZUNGUNDE</h1>
-    </div>
-    <div class="page-1">
-    <div class="nickelodeon-container">
-        <h2>Walcome to my portfolio</h2>
-        <div class="splat splat-1"></div>
-        <div class="splat splat-2"></div>
-    </div>
-    </div>
+    </header>
 
+    <!-- Hero Section with Glow Effect -->
+    <section id="hero" class="hero">
+        <section class="hero">
+            
+            <h1 class="glow">Hi, I'm Pressly Zungunde</h1>
+            <div class="typing-container">
+                <span id="dynamic-text"></span>
+                <span class="cursor">|</span>
+              </div>
+          </section>          
+        <div class="animated-shapes">
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape triangle"></div>
+        </div>
+    </section>
 
-    <div id="about-me" class="about-me">
-        <div class="about-content">
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-              I'm a passionate developer with a love for creating engaging web experiences. I believe in minimalism and clean design, and I’m always learning and improving my skills to deliver impactful projects. Coding is my craft and I take pride in every detail of the work I do.
-            </p>
-          </div>
-          <div class="about-image">
-            <img src="imagies/My babesgotbytsepic.jpg" alt="About Me">
-          </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2 class="glow">About Me</h2>
         </div>
+        <p>I am a passionate developer who specializes in creating engaging, interactive, and visually stunning websites that inspire users worldwide.</p>
+    </section>
+
+    <section class="profile">
+        <div class="profile-picture">
+          <img src="./imagies/My babesgotbytsepic.jpg" alt="Pressly Zungunde">
         </div>
-        <!--projects section-->
-        <section id="projects">
-          <h4>Projects</h4>
-          <h4>Coming soon....</h4>
-          <div class="project-list" id="projectList">
-              <!-- Projects will be inserted here by JavaScript -->
-          </div>
       </section>
-
-      <!--form contact-->
-     
-
-      <div class="container-fixed">
-        <div class="column left">
-          <h2 id="header-greeting">Hi there!</h2>
-          <h4 id="header-invite">
-            If you would like to connect with me, be sure to send me an email
-          </h4>
-          
+      
+      <section id="skills" class="section">
+        <h2 class="glow">Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <span class="skill-title">HTML</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;" data-percentage="90"></div>
+              <span class="percentage-text">0%</span>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill-title">CSS</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;" data-percentage="80"></div>
+              <span class="percentage-text">0%</span>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill-title">JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%;" data-percentage="70"></div>
+              <span class="percentage-text">0%</span>
+            </div>
+          </div>
         </div>
-        <div class="column right">
-          <h1 id="header-contact">Contact form</h1>
-          <div class="form-group">
-            <h5 for="name">Name</h5>
-            <input type="text" id="name" placeholder="Enter name" />
-          </div>
-          <div class="form-group">
-            <h5 for="email">Email</h5>
-            <input type="email" id="email" placeholder="Enter email" />
-          </div>
-          <div class="form-group">
-            <h5 for="message">Message</h5>
-            <textarea id="message" rows="3"></textarea>
-          </div>
-          <button onclick="sendMail()">Submit</button>
+      </section>      
+      
+      
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>coming soon.</p>
+        </div> 
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>coming soon.</p>
         </div>
+      </section>
+      
+
+ <!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="section-title">
+      <h2 class="glow">Contact Me</h2>
+  </div>
+  <form id="contactForm" onsubmit="return sendMail(event)">
+      <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required>
       </div>
       
-      <footer class="footer">
-        <p>&copy; 2024 Pressly zungunde. All rights reserved.</p>
-      </footer>
+      <div class="form-group">
+          <textarea id="message" placeholder="Your Message" required></textarea>
+      </div>
       
-      
-      <script src="index.js"></script>
+      <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    <section id="download-cv" class="section">
+      <h2 class="glow">Get My CV</h2>
+      <div class="cv-container">
+        <a href="PresslyZungunde_CV.pdf" class="cv-download-btn" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+        <a href="https://www.linkedin.com/in/pressly-zungunde-520197256/" target="_blank" class="linkedin-link">
+          <i class="fab fa-linkedin"></i> Connect on LinkedIn
+        </a>
+        <a href="https://www.youtube.com/@PresslyZungunde" target="_blank" class="youtube-link">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+      </div>
+    </section>
     
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pressly Zungunde. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="index.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>

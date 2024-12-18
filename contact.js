@@ -1,5 +1,5 @@
 /*form sectionn*/ 
-
+/*
 function sendMail() {
     var params = {
       name: document.getElementById("name").value,
@@ -140,4 +140,77 @@ const styles = {
       Object.assign(button.style, styles.btnPrimary);
     });
   };
+
   
+  
+
+  function sendMail() {
+    const params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_zlvfsck";
+    const templateID = "template_ncl0mda";
+  
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!");
+      })
+      .catch((err) => console.log(err));
+  }
+
+
+  function sendMail() {
+    var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_zlvfsck";
+    const templateID = "template_ncl0mda";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res=>{
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
+  */
+
+
+  function sendMail(event) {
+    event.preventDefault(); // Prevent form from reloading the page
+    
+    const params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_zlvfsck";
+    const templateID = "template_ncl0mda";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            // Clear form fields after submission
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            alert("Your message has been sent successfully!");
+        })
+        .catch(err => console.error("Failed to send email: ", err));
+}
