@@ -23,6 +23,52 @@ $primary-color: #0d6efd;
 $accent-color: #ff6f61;
 $light-text: #f4f4f4;
 
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none; /* Removes the underline */
+  transition: background-color 0.3s, transform 0.3s ease;
+  color: #fff;
+  margin-top: 10px;
+  background-color: #6f42c1;  /* Default background color for both buttons */
+}
+
+.project-button i {
+  margin-right: 10px;
+}
+
+/* Specific style for Live Project Button */
+.live-project {
+  background-color: #6f42c1;  /* Violet color */
+}
+
+/* Specific style for GitHub Repository Button */
+.github-repo {
+  background-color: #333;  /* Dark color */
+}
+
+.project-button:hover {
+  background-color: #ff6f61;  /* Hover effect - changes to a different color */
+  transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+.project-button:hover i {
+  color: #fff;  /* Changes icon color on hover */
+}
+
+.project-button:active {
+  background-color: #5a2a9e; /* Slightly darker shade on button click */
+}
+
+
+
+
 /* YouTube Button */
 .youtube-link {
   background-color: #ff0000;
